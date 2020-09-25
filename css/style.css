@@ -94,6 +94,7 @@ object {
 
 .header_logo p {
   font-size: 20px;
+  font-weight: bold;
 }
 
 .header_flex {
@@ -345,7 +346,9 @@ object {
   width: 60%;
   margin: auto;
 }
-
+.office-title{
+  font-weight: bold;
+}
 #footer .footer-link a {
   color: #fff;
   padding-left: 20px;
@@ -787,6 +790,7 @@ table td {
   }
 .sm-logo p{
   padding-left: 10px;
+  font-weight: bold;
 }
   #header img {
     width: 50px;
