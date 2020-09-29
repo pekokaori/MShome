@@ -11,10 +11,7 @@
 }
 
 body {
-  font-family: 'Kosugi Maru', sans-serif;
-  font-family: 'M PLUS 1p', sans-serif;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-  font-family: 'Sawarabi Gothic', sans-serif;
+  font-family: 'メイリオ', Meiryo,'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ＭＳ Ｐゴシック','MS PGothic''MS UI Gothic','Helvetica','Arial',sans-serif;
   color: #344f71;
   font-size: 15px;
   line-height: 1.8;
@@ -381,9 +378,9 @@ object {
 }
 
 .group {
-  width: 400px;
-  height: 180px;
-  margin-bottom: 10px;
+  width:40%;
+  height:auto;
+  margin: auto;
 }
 
 .recruitment_btn {
@@ -643,11 +640,10 @@ table td {
   text-align: center;
 }
 
-#access p {
-  text-align: center;
-  font-size: 18px;
-}
-
+iframe{
+  width: 100%;
+  margin: auto;
+} 
 /*--------------------------------
 サービス
 ---------------------------------*/
@@ -708,7 +704,46 @@ table td {
   width: 500px;
   height: 100px;
 }
+.tb2{
+  margin-bottom: 30px;
+}
 
+.tb2 th::after{
+  display: none;
+}
+.tb2 td{
+  font-size: 14px;
+  text-align: left;
+}
+
+/* 業務連携ページ */
+.recruitpage h2 {
+  background-image: url(../img/ms-recruit.png);
+  background-size:cover;
+  background-position:top;
+  height: auto;
+  padding: 100px;
+  font-size: 50px;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto 50px;
+
+}
+
+.recruit-flex{
+  display: flex;
+  align-items: center;
+}
+.recruit-img,.recruit-text{
+  width: 50%;
+  margin: auto;
+}
+.recruit-text p{
+  font-size: 26px;
+}
+.recruit-text h5{
+  text-align: right;
+}
 /* タブレット */
 @media screen and (max-width: 896px) {
   .header_logo p {
@@ -748,7 +783,6 @@ table td {
   font-size: 14px;
 }
 }
-
 @media screen and (min-width:768px) {
 
   #nav-drawer,
@@ -757,6 +791,7 @@ table td {
   }
 
 }
+
 
 /* スマホ */
 @media screen and (max-width:767px) {
@@ -788,7 +823,7 @@ table td {
     padding: 3px 10px;
     border-radius: 10px;
   }
-.sm-logo p{
+.sm-logo a{
   padding-left: 10px;
   font-weight: bold;
 }
@@ -910,7 +945,7 @@ table td {
   }
 
   .sm-adress {
-    text-align: left;
+    text-align: center;
     width: 75%;
     margin: 0 auto;
 
@@ -1041,7 +1076,7 @@ table td {
     font-size: 14px;
   }
   /* 会社概要 */
-.office h2{
+.office h2,.recruitpage h2{
   margin-top: 16px;
   background-position: bottom;
   height: 60px;
@@ -1083,5 +1118,23 @@ iframe{
 }
 .office-story h2{
   font-size: 24px;
+}
+/* 連携業務 */
+.recruit-flex{
+  flex-direction:column;
+  margin:10px auto 30px;
+}
+.recruit-img,.recruit-text{
+  width: 80%;
+  margin: auto;
+}
+.recruit-text{
+  padding: 10px 0;
+}
+.recruit-text h5{
+  margin-bottom: 30px;
+}
+.recruit-text p{
+  font-size: 18px;
 }
 }
